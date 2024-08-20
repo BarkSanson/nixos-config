@@ -9,6 +9,7 @@
         ./wofi/wofi.nix
         ./git.nix
         ./neovim.nix
+        ./fastfetch.nix
     ];
 
     home = {
@@ -32,5 +33,4 @@
     programs.btop.enable = true;
     programs.firefox.enable = true;
     programs.vscode.enable = true;
-    programs.spotify-player.enable = true;
 }

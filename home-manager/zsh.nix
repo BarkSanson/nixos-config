@@ -10,5 +10,9 @@
             plugins = [ "git" ];
             theme = "fino-time";
         };
+
+        envExtra = ''
+            fastfetch
+        '';
     };
 }
