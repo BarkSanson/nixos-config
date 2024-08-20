@@ -80,6 +80,7 @@
     spotify
     bluez
     pavucontrol
+    python3
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
