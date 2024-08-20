@@ -19,6 +19,11 @@ components of the environment are:
 Other programs are also included, such as Firefox or VS Code. Feel free to dive into
 the configuration and tweak whatever you want.
 
+I'm also working in adding more features, since the system is usable but is lacking some 
+programs and services that would be great to have. Also I will work on a Python script
+to be able to change the theme and appearence of the system, mainly Hyprland, Waybar and Wofi,
+but I will first try to figure out how to build a complete system that fits exactly my needs.
+
 # Contributions
 Any advice or contribution is very welcome, since I want to keep learning about NixOS.
 
