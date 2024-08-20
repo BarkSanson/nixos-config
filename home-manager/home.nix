@@ -19,6 +19,7 @@
 
     home.packages = with pkgs; [
         xfce.thunar
+        thunderbird
     ];
 
     programs.home-manager.enable = true;
