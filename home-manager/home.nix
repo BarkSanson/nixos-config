@@ -6,7 +6,7 @@
         ./zsh.nix
         ./kitty.nix 
         ./waybar/waybar.nix
-        ./wofi.nix
+        ./wofi/wofi.nix
         ./git.nix
         ./neovim.nix
     ];

@@ -1,0 +1,13 @@
+* {
+    font-family: "Fira Code", FontAwesome
+}
+
+window {
+    background-color: rgb(135, 100, 69);
+    border-radius: 10px;
+}
+
+#input {
+    background-color: rgb(244, 223, 186);
+    color: rgb(135, 100, 69);
+}
