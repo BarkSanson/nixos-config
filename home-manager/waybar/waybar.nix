@@ -16,7 +16,6 @@
                 ];
                 modules-center = [
                     "clock"
-                    "tray"
                 ];
                 modules-right = [
                     "group/system-info"
@@ -78,7 +77,7 @@
                 bluetooth = {
                     format-on = "";
                     format-off = "󰂲";
-                    format-conneceted = "󰂰 {num_connections}";
+                    format-connected = "󰂰 {num_connections}";
                 };
 
                 tray = {
