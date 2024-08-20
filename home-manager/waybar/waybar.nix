@@ -113,6 +113,7 @@
                     format = "⏻ ";
                     tooltip = false;
                     menu = "on-click";
+                    menu-file = "$HOME/.config/waybar/power_menu.xml";
                     menu-actions = {
                         shutdown = "shutdown";
                         reboot = "reboot";
