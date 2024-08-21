@@ -16,6 +16,6 @@
                 "battery"
                 "colors"
             ];
-        }
+        };
     };
 }

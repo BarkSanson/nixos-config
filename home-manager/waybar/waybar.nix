@@ -27,6 +27,7 @@
                 "custom/menu" = {
                     format = "{icon}";
                     format-icons = "";
+                    on-click = "wofi --show drun";
                 };
 
                 "hyprland/workspaces" = {

@@ -3,7 +3,7 @@ if [ ! -d "$HOME/.config/waybar" ]; then
 fi
 
 cp home-manager/waybar/theme.css $HOME/.config/waybar
-cp home-manager/waybar/power_menu.xml$HOME/.config/waybar
+cp home-manager/waybar/power_menu.xml $HOME/.config/waybar
 
 if [ ! -d "$HOME/.config/wofi" ]; then
     mkdir "$HOME/.config/wofi"
