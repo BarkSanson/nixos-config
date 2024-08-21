@@ -1,8 +1,6 @@
-{ lib, ... }:
-
 {
-    programs.neovim = {
+    programs.nixvim = {
         enable = true;
-        extraConfig = lib.fileContents ./init.vim;
+        # extraConfig = lib.fileContents ./init.vim;
     };
 }
