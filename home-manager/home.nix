@@ -8,7 +8,7 @@
         ./waybar/waybar.nix
         ./wofi/wofi.nix
         ./git.nix
-        ./neovim.nix
+        ./neovim/neovim.nix
         ./fastfetch.nix
     ];
 

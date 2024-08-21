@@ -39,7 +39,7 @@
 
                 allow_tearing = false;
 
-                layout = "dwindle";
+                layout = "master";
             };
 
             input = {
@@ -92,11 +92,24 @@
             };
 
             master = {
-                new_status = "master";
+                new_status = "slave";
             };
+
+            misc = {
+                disable_hyprland_logo = true;
+            };
+
+            windowrule = [
+                "workspace 1, ^(firefox)$"
+                "workspace 2, ^(kitty)$"
+                "workspace 4, ^(spotify)$"
+                "workspace 5, ^(thunar)$"
+                "workspace 6, ^(thunderbird)$"
+            ];
 
             windowrulev2 = [
                 "suppressevent maximize, class:.*"
+                "workspace 4, initialTitle:(Spotify Premium)"
             ];
 
             bind = [
@@ -105,7 +118,7 @@
                 "$mod, M, exec, $fileManager"
                 "$mod, C, killactive"
                 "$mod, V, togglefloating"
-                "$mod, F, fullscreen"
+                "$mod, F, fullscreen, 1"
 
                 "$mod, h, movefocus, l"
                 "$mod, l, movefocus, r"
@@ -125,6 +138,11 @@
                 )
                 7)
             );
+
+            bindm = [
+                "$mod, mouse:272, moveWindow"
+                "$mod, mouse:273, resizeWindow"
+            ];
         };
     };
 }
