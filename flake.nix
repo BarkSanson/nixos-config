@@ -23,11 +23,11 @@
             modules = [ 
                 ./system/configuration.nix 
                 home-manager.nixosModules.home-manager {
+		    home-manager.sharedModules = [ inputs.nixvim.homeManagerModules.nixvim ];
                     home-manager.useGlobalPkgs = true;
                     home-manager.useUserPackages = true;
                     home-manager.users.bark = import ./home-manager/home.nix;
                 }
-		inputs.nixvim.homeManagerModules.nixvim
             ];
         };
     };

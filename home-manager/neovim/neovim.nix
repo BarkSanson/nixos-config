@@ -1,6 +1,15 @@
 {
     programs.nixvim = {
         enable = true;
-        # extraConfig = lib.fileContents ./init.vim;
+	colorschemes.gruvbox.enable = true;
+
+	opts = {
+	    number = true;
+	    relativenumber = true;
+
+	    expandtab = true;
+	    smarttab = true;
+	    shiftwidth = 2;
+	};
     };
 }
