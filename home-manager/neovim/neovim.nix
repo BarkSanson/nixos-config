@@ -24,10 +24,6 @@
     ];
 
     plugins = {
-      coq-nvim = {
-        enable = true;
-      }; 
-
       airline = {
         enable = true;
       };
