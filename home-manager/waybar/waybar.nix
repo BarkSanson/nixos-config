@@ -21,7 +21,7 @@
                     "group/system-info"
                     "pulseaudio"
                     "battery"
-                    "custom/power"
+                    "group/power"
                 ];
 
                 "custom/menu" = {
@@ -110,16 +110,43 @@
                     format-icons = ["" "" "" "" ""];
                 };
 
-                "custom/power" = {
-                    format = "⏻ ";
-                    tooltip = false;
-                    menu = "on-click";
-                    menu-file = "$HOME/.config/waybar/power_menu.xml";
-                    menu-actions = {
-                        shutdown = "shutdown";
-                        reboot = "reboot";
-                        logout = "logout";
+                "group/power" = {
+                    orientation = "inherit";
+                    drawer = {
+                      transition-duration = 500;
+                      children-class = "not-power";
+                      transition-left-to-right = false;
                     };
+                    modules = [
+                      "custom/power"
+                      "custom/quit"
+                      "custom/lock"
+                      "custom/reboot"
+                    ];
+                };
+
+                "custom/quit" = {
+                  "format" = "󰗼";
+                  "tooltip" = false;
+                  "on-click" = "hyprctl dispatch exit";
+                };
+
+                "custom/lock" = {
+                  "format" = "󰍁";
+                  "tooltip" = false;
+                  "on-click" = "swaylock";
+                };
+
+                "custom/reboot" = {
+                  "format" = "󰜉";
+                  "tooltip" = false;
+                  "on-click" = "reboot";
+                };
+
+                "custom/power" = {
+                  "format" = "";
+                  "tooltip" = false;
+                  "on-click" = "shutdown now";
                 };
             };
         };
