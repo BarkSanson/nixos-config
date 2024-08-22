@@ -28,8 +28,6 @@
         enable = true;
       };
 
-      lsp-format.enable = true;
-
       lsp = {
         enable = true;
 
@@ -37,6 +35,41 @@
           pyright.enable = true;
         };
       };
+
+      lsp-format.enable = true;
+
+      luasnip.enable = true;
+
+      cmp = {
+        enable = true;
+
+        settings = {
+          sources = [
+            { name = "path"; }
+            { name = "nvim_lsp"; }
+            { name = "luasnip"; }
+          ];
+        };
+
+      };
+
+      nvim-autopairs.enable = true;
+
+      treesitter = {
+        enable = true;
+
+        settings = {
+          highlight = {
+            enable = true;
+            use_languagetree = true;
+          };
+
+          indent = {
+            enable = true;
+          };
+        };
+      };
+
     };
   };
 }
