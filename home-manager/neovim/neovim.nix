@@ -50,7 +50,6 @@
             { name = "luasnip"; }
           ];
         };
-
       };
 
       nvim-autopairs.enable = true;
@@ -58,18 +57,8 @@
       treesitter = {
         enable = true;
 
-        settings = {
-          highlight = {
-            enable = true;
-            use_languagetree = true;
-          };
-
-          indent = {
-            enable = true;
-          };
-        };
+        indent = true;
       };
-
     };
   };
 }
