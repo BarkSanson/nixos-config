@@ -21,6 +21,11 @@
         options.silent = true;
         action = ":noh<cr><esc>";
       }
+      {
+        key = "<C-n>";
+        action = "<CMD>NvimTreeToggle<CR>";
+        options.desc = "Toggle NvimTree";
+      }
     ];
 
     plugins = {
@@ -33,6 +38,8 @@
 
         servers = {
           pyright.enable = true;
+          nixd.enable = true;
+          bashls.enable = true;
         };
       };
 
@@ -58,6 +65,12 @@
         enable = true;
 
         indent = true;
+      };
+
+      nvim-tree = {
+        enable = true;
+        openOnSetupFile = true;
+        autoReloadOnWrite = true;
       };
     };
   };
