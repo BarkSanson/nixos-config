@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   programs.nixvim = {
     enable = true;
@@ -29,8 +31,14 @@
     ];
 
     plugins = {
-      airline = {
+      bufferline = {
         enable = true;
+      };
+
+      lualine = {
+        enable = true;
+
+        theme = "gruvbox";
       };
 
       lsp = {
@@ -73,5 +81,9 @@
         autoReloadOnWrite = true;
       };
     };
+
+    extraPlugins = with pkgs.vimPlugins; [
+      vim-airline-themes
+    ];
   };
 }
