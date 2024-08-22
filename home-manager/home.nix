@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
     imports = [
@@ -10,6 +10,7 @@
         ./git.nix
         ./neovim/neovim.nix
         ./fastfetch.nix
+        ./btop.nix
     ];
 
     home = {
@@ -30,7 +31,6 @@
     # are placed here. If by any chance I end
     # up wanting to configure them, they will be moved
     # to an external file.
-    programs.btop.enable = true;
     programs.firefox.enable = true;
     programs.vscode.enable = true;
 }
