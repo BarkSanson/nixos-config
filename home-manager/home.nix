@@ -10,6 +10,7 @@
         ./git.nix
         ./neovim/neovim.nix
         ./fastfetch.nix
+        ./mako.nix
         ./btop.nix
     ];
 
