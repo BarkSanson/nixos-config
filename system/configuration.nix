@@ -85,6 +85,7 @@
     pavucontrol
     python3
     neovim
+    jq
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

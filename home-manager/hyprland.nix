@@ -124,6 +124,8 @@
                 "$mod, l, movefocus, r"
                 "$mod, k, movefocus, u"
                 "$mod, j, movefocus, d"
+
+                "$mod SHIFT, s, swapactiveworkspaces, 0 1"
             ] ++ (
                 builtins.concatLists (builtins.genList (
                     x: let
