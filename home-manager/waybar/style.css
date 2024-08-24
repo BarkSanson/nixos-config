@@ -51,6 +51,12 @@ button {
   color: #eb4d4b;
 }
 
+button:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+
 #workspaces,
 #system-info,
 #clock,
@@ -61,6 +67,10 @@ button {
   border-radius: 90px;
   font-weight: 600;
   border: 1px solid @text;
+}
+
+#workspaces {
+  padding: 0px;
 }
 
 #custom-menu {
